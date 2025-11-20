@@ -48,10 +48,7 @@ try {
         'error'   => true,
         'message' => $e->getMessage()
     ];
-} finally {
-    // 6. Fecha a sessão cURL
-    curl_close($curl);
 }
 
-// 7. Exibe a resposta
+// 6. Exibe a resposta
 echo json_encode($response);
